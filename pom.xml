@@ -9,6 +9,19 @@
   <description>Example Code for Maven: By Example</description>
   
   <url>http://sonatype.com/book</url>
+  
+  <distributionManagement>
+    <repository>
+      <id>central</id>
+      <name>plugins-releases</name>
+      <url>http://localhost:8081/artifactory/plugins-release-local</url>
+    </repository>
+    <snapshotRepository>
+      <id>snapshots</id>
+      <name>plugins-snapshot</name>
+      <url>http://localhost:8081/artifactory/plugins-snapshot-local</url>
+    </snapshotRepository>
+  </distributionManagement>
 
 <!--  <modules>
     <module>ch-simple</module>
